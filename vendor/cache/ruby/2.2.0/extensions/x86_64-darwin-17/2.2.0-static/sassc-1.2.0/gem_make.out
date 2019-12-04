@@ -1,0 +1,246 @@
+current directory: /Users/XDaniel/Desktop/booksite3/vendor/cache/ruby/2.2.0/gems/sassc-1.2.0
+/Users/XDaniel/.rbenv/versions/2.2.2/bin/ruby -rrubygems /Users/XDaniel/Desktop/booksite3/vendor/cache/ruby/2.2.0/gems/rake-13.0.1/exe/rake RUBYARCHDIR=/Users/XDaniel/Desktop/booksite3/vendor/cache/ruby/2.2.0/extensions/x86_64-darwin-17/2.2.0-static/sassc-1.2.0 RUBYLIBDIR=/Users/XDaniel/Desktop/booksite3/vendor/cache/ruby/2.2.0/extensions/x86_64-darwin-17/2.2.0-static/sassc-1.2.0
+cd ext/libsass
+make lib/libsass.so LDFLAGS="-Wall -O2"
+mkdir lib
+cc -Wall -O2 -stdlib=libc++ -fPIC -c -o cencode.o cencode.c
+c++ -Wall -O2 -std=c++0x -stdlib=libc++ -fPIC -c -o ast.o ast.cpp
+In file included from ast.cpp:1:
+./ast.hpp:1942:34: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+      if (length() > 0 && typeid(*(*this)[0]) == typeid(Type_Selector))
+                                 ^
+./ast.hpp:1959:21: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+             typeid(*(*this)[0]) == typeid(Selector_Reference) &&
+                    ^
+ast.cpp:105:21: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+        if ((typeid(*(*rhs)[i]) == typeid(Pseudo_Selector) || typeid(*(*rhs)[i]) == typeid(Wrapped_Selector)) && (*rhs)[L-1]->is_pseudo_element())
+                    ^
+ast.cpp:105:70: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+        if ((typeid(*(*rhs)[i]) == typeid(Pseudo_Selector) || typeid(*(*rhs)[i]) == typeid(Wrapped_Selector)) && (*rhs)[L-1]->is_pseudo_element())
+                                                                     ^
+ast.cpp:113:20: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+        if (typeid(*(*rhs)[i]) == typeid(Pseudo_Selector) || typeid(*(*rhs)[i]) == typeid(Wrapped_Selector))
+                   ^
+ast.cpp:113:69: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+        if (typeid(*(*rhs)[i]) == typeid(Pseudo_Selector) || typeid(*(*rhs)[i]) == typeid(Wrapped_Selector))
+                                                                    ^
+6 warnings generated.
+c++ -Wall -O2 -std=c++0x -stdlib=libc++ -fPIC -c -o base64vlq.o base64vlq.cpp
+c++ -Wall -O2 -std=c++0x -stdlib=libc++ -fPIC -c -o bind.o bind.cpp
+In file included from bind.cpp:2:
+./ast.hpp:1942:34: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+      if (length() > 0 && typeid(*(*this)[0]) == typeid(Type_Selector))
+                                 ^
+./ast.hpp:1959:21: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+             typeid(*(*this)[0]) == typeid(Selector_Reference) &&
+                    ^
+2 warnings generated.
+c++ -Wall -O2 -std=c++0x -stdlib=libc++ -fPIC -c -o constants.o constants.cpp
+c++ -Wall -O2 -std=c++0x -stdlib=libc++ -fPIC -c -o context.o context.cpp
+In file included from context.cpp:14:
+./ast.hpp:1942:34: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+      if (length() > 0 && typeid(*(*this)[0]) == typeid(Type_Selector))
+                                 ^
+./ast.hpp:1959:21: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+             typeid(*(*this)[0]) == typeid(Selector_Reference) &&
+                    ^
+2 warnings generated.
+c++ -Wall -O2 -std=c++0x -stdlib=libc++ -fPIC -c -o contextualize.o contextualize.cpp
+In file included from contextualize.cpp:2:
+./ast.hpp:1942:34: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+      if (length() > 0 && typeid(*(*this)[0]) == typeid(Type_Selector))
+                                 ^
+./ast.hpp:1959:21: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+             typeid(*(*this)[0]) == typeid(Selector_Reference) &&
+                    ^
+2 warnings generated.
+c++ -Wall -O2 -std=c++0x -stdlib=libc++ -fPIC -c -o contextualize_eval.o contextualize_eval.cpp
+In file included from contextualize_eval.cpp:1:
+In file included from ./contextualize_eval.hpp:4:
+In file included from ./eval.hpp:11:
+In file included from ./listize.hpp:7:
+./ast.hpp:1942:34: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+      if (length() > 0 && typeid(*(*this)[0]) == typeid(Type_Selector))
+                                 ^
+./ast.hpp:1959:21: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+             typeid(*(*this)[0]) == typeid(Selector_Reference) &&
+                    ^
+2 warnings generated.
+c++ -Wall -O2 -std=c++0x -stdlib=libc++ -fPIC -c -o cssize.o cssize.cpp
+In file included from cssize.cpp:4:
+In file included from ./cssize.hpp:7:
+./ast.hpp:1942:34: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+      if (length() > 0 && typeid(*(*this)[0]) == typeid(Type_Selector))
+                                 ^
+./ast.hpp:1959:21: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+             typeid(*(*this)[0]) == typeid(Selector_Reference) &&
+                    ^
+2 warnings generated.
+c++ -Wall -O2 -std=c++0x -stdlib=libc++ -fPIC -c -o listize.o listize.cpp
+In file included from listize.cpp:4:
+In file included from ./listize.hpp:7:
+./ast.hpp:1942:34: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+      if (length() > 0 && typeid(*(*this)[0]) == typeid(Type_Selector))
+                                 ^
+./ast.hpp:1959:21: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+             typeid(*(*this)[0]) == typeid(Selector_Reference) &&
+                    ^
+2 warnings generated.
+c++ -Wall -O2 -std=c++0x -stdlib=libc++ -fPIC -c -o error_handling.o error_handling.cpp
+c++ -Wall -O2 -std=c++0x -stdlib=libc++ -fPIC -c -o eval.o eval.cpp
+In file included from eval.cpp:9:
+In file included from ./eval.hpp:11:
+In file included from ./listize.hpp:7:
+./ast.hpp:1942:34: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+      if (length() > 0 && typeid(*(*this)[0]) == typeid(Type_Selector))
+                                 ^
+./ast.hpp:1959:21: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+             typeid(*(*this)[0]) == typeid(Selector_Reference) &&
+                    ^
+eval.cpp:524:70: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+      if (operand->concrete_type() == Expression::NULL_VAL && typeid(*(u->operand())) == typeid(Variable)) {
+                                                                     ^
+3 warnings generated.
+c++ -Wall -O2 -std=c++0x -stdlib=libc++ -fPIC -c -o expand.o expand.cpp
+In file included from expand.cpp:4:
+In file included from ./expand.hpp:8:
+./ast.hpp:1942:34: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+      if (length() > 0 && typeid(*(*this)[0]) == typeid(Type_Selector))
+                                 ^
+./ast.hpp:1959:21: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+             typeid(*(*this)[0]) == typeid(Selector_Reference) &&
+                    ^
+2 warnings generated.
+c++ -Wall -O2 -std=c++0x -stdlib=libc++ -fPIC -c -o extend.o extend.cpp
+In file included from extend.cpp:1:
+In file included from ./extend.hpp:9:
+./ast.hpp:1942:34: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+      if (length() > 0 && typeid(*(*this)[0]) == typeid(Type_Selector))
+                                 ^
+./ast.hpp:1959:21: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+             typeid(*(*this)[0]) == typeid(Selector_Reference) &&
+                    ^
+2 warnings generated.
+c++ -Wall -O2 -std=c++0x -stdlib=libc++ -fPIC -c -o file.o file.cpp
+c++ -Wall -O2 -std=c++0x -stdlib=libc++ -fPIC -c -o functions.o functions.cpp
+In file included from functions.cpp:2:
+./ast.hpp:1942:34: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+      if (length() > 0 && typeid(*(*this)[0]) == typeid(Type_Selector))
+                                 ^
+./ast.hpp:1959:21: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+             typeid(*(*this)[0]) == typeid(Selector_Reference) &&
+                    ^
+2 warnings generated.
+c++ -Wall -O2 -std=c++0x -stdlib=libc++ -fPIC -c -o inspect.o inspect.cpp
+In file included from inspect.cpp:8:
+./ast.hpp:1942:34: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+      if (length() > 0 && typeid(*(*this)[0]) == typeid(Type_Selector))
+                                 ^
+./ast.hpp:1959:21: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+             typeid(*(*this)[0]) == typeid(Selector_Reference) &&
+                    ^
+2 warnings generated.
+c++ -Wall -O2 -std=c++0x -stdlib=libc++ -fPIC -c -o lexer.o lexer.cpp
+c++ -Wall -O2 -std=c++0x -stdlib=libc++ -fPIC -c -o node.o node.cpp
+In file included from node.cpp:1:
+In file included from ./node.hpp:8:
+./ast.hpp:1942:34: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+      if (length() > 0 && typeid(*(*this)[0]) == typeid(Type_Selector))
+                                 ^
+./ast.hpp:1959:21: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+             typeid(*(*this)[0]) == typeid(Selector_Reference) &&
+                    ^
+2 warnings generated.
+c++ -Wall -O2 -std=c++0x -stdlib=libc++ -fPIC -c -o json.o json.cpp
+c++ -Wall -O2 -std=c++0x -stdlib=libc++ -fPIC -c -o emitter.o emitter.cpp
+c++ -Wall -O2 -std=c++0x -stdlib=libc++ -fPIC -c -o output.o output.cpp
+In file included from output.cpp:1:
+./ast.hpp:1942:34: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+      if (length() > 0 && typeid(*(*this)[0]) == typeid(Type_Selector))
+                                 ^
+./ast.hpp:1959:21: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+             typeid(*(*this)[0]) == typeid(Selector_Reference) &&
+                    ^
+2 warnings generated.
+c++ -Wall -O2 -std=c++0x -stdlib=libc++ -fPIC -c -o parser.o parser.cpp
+In file included from parser.cpp:4:
+In file included from ./parser.hpp:8:
+./ast.hpp:1942:34: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+      if (length() > 0 && typeid(*(*this)[0]) == typeid(Type_Selector))
+                                 ^
+./ast.hpp:1959:21: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+             typeid(*(*this)[0]) == typeid(Selector_Reference) &&
+                    ^
+2 warnings generated.
+c++ -Wall -O2 -std=c++0x -stdlib=libc++ -fPIC -c -o plugins.o plugins.cpp
+c++ -Wall -O2 -std=c++0x -stdlib=libc++ -fPIC -c -o position.o position.cpp
+c++ -Wall -O2 -std=c++0x -stdlib=libc++ -fPIC -c -o prelexer.o prelexer.cpp
+c++ -Wall -O2 -std=c++0x -stdlib=libc++ -fPIC -c -o remove_placeholders.o remove_placeholders.cpp
+In file included from remove_placeholders.cpp:1:
+In file included from ./remove_placeholders.hpp:8:
+./ast.hpp:1942:34: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+      if (length() > 0 && typeid(*(*this)[0]) == typeid(Type_Selector))
+                                 ^
+./ast.hpp:1959:21: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+             typeid(*(*this)[0]) == typeid(Selector_Reference) &&
+                    ^
+2 warnings generated.
+c++ -Wall -O2 -std=c++0x -stdlib=libc++ -fPIC -c -o sass.o sass.cpp
+c++ -Wall -O2 -std=c++0x -stdlib=libc++ -fPIC -c -o sass_util.o sass_util.cpp
+In file included from sass_util.cpp:1:
+In file included from ./node.hpp:8:
+./ast.hpp:1942:34: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+      if (length() > 0 && typeid(*(*this)[0]) == typeid(Type_Selector))
+                                 ^
+./ast.hpp:1959:21: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+             typeid(*(*this)[0]) == typeid(Selector_Reference) &&
+                    ^
+2 warnings generated.
+c++ -Wall -O2 -std=c++0x -stdlib=libc++ -fPIC -c -o sass_values.o sass_values.cpp
+c++ -Wall -O2 -std=c++0x -stdlib=libc++ -fPIC -c -o sass_context.o sass_context.cpp
+c++ -Wall -O2 -std=c++0x -stdlib=libc++ -fPIC -c -o sass_functions.o sass_functions.cpp
+c++ -Wall -O2 -std=c++0x -stdlib=libc++ -fPIC -c -o sass_interface.o sass_interface.cpp
+c++ -Wall -O2 -std=c++0x -stdlib=libc++ -fPIC -c -o sass2scss.o sass2scss.cpp
+c++ -Wall -O2 -std=c++0x -stdlib=libc++ -fPIC -c -o source_map.o source_map.cpp
+In file included from source_map.cpp:7:
+./ast.hpp:1942:34: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+      if (length() > 0 && typeid(*(*this)[0]) == typeid(Type_Selector))
+                                 ^
+./ast.hpp:1959:21: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+             typeid(*(*this)[0]) == typeid(Selector_Reference) &&
+                    ^
+2 warnings generated.
+c++ -Wall -O2 -std=c++0x -stdlib=libc++ -fPIC -c -o to_c.o to_c.cpp
+In file included from to_c.cpp:2:
+./ast.hpp:1942:34: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+      if (length() > 0 && typeid(*(*this)[0]) == typeid(Type_Selector))
+                                 ^
+./ast.hpp:1959:21: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+             typeid(*(*this)[0]) == typeid(Selector_Reference) &&
+                    ^
+2 warnings generated.
+c++ -Wall -O2 -std=c++0x -stdlib=libc++ -fPIC -c -o to_string.o to_string.cpp
+In file included from to_string.cpp:6:
+./ast.hpp:1942:34: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+      if (length() > 0 && typeid(*(*this)[0]) == typeid(Type_Selector))
+                                 ^
+./ast.hpp:1959:21: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+             typeid(*(*this)[0]) == typeid(Selector_Reference) &&
+                    ^
+2 warnings generated.
+c++ -Wall -O2 -std=c++0x -stdlib=libc++ -fPIC -c -o units.o units.cpp
+c++ -Wall -O2 -std=c++0x -stdlib=libc++ -fPIC -c -o utf8_string.o utf8_string.cpp
+c++ -Wall -O2 -std=c++0x -stdlib=libc++ -fPIC -c -o util.o util.cpp
+In file included from util.cpp:2:
+./ast.hpp:1942:34: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+      if (length() > 0 && typeid(*(*this)[0]) == typeid(Type_Selector))
+                                 ^
+./ast.hpp:1959:21: warning: expression with side effects will be evaluated despite being used as an operand to 'typeid' [-Wpotentially-evaluated-expression]
+             typeid(*(*this)[0]) == typeid(Selector_Reference) &&
+                    ^
+util.cpp:564:57: warning: all paths through this function will call itself [-Winfinite-recursion]
+    bool isPrintable(Expression* e, Output_Style style) {
+                                                        ^
+3 warnings generated.
+c++ -shared -Wall -O2 -o lib/libsass.so cencode.o ast.o base64vlq.o bind.o constants.o context.o contextualize.o contextualize_eval.o cssize.o listize.o error_handling.o eval.o expand.o extend.o file.o functions.o inspect.o lexer.o node.o json.o emitter.o output.o parser.o plugins.o position.o prelexer.o remove_placeholders.o sass.o sass_util.o sass_values.o sass_context.o sass_functions.o sass_interface.o sass2scss.o source_map.o to_c.o to_string.o units.o utf8_string.o util.o -lstdc++ -lm -ldl
+cd /Users/XDaniel/Desktop/booksite3/vendor/cache/ruby/2.2.0/gems/sassc-1.2.0/

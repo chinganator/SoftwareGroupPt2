@@ -9,9 +9,11 @@ class BooksController < ApplicationController
     end 
 
     def index
-        @search = Book.search(params[:q])
-        @book = @search.result 
-        @books = Book.all 
+        params[:q].reject { |_, v| v.blank?} if params[:q]
+
+        @books = Book.all.order(:id)
+        @q = Book.ransack(params[:q])
+        @books = @q.result.includes(:user)
     end 
     
 

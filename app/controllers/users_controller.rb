@@ -8,6 +8,12 @@ class UsersController < ApplicationController
         @user = User.find(params[:id])
     end 
 
+    def index
+        @users = User.all.order(:id)
+        @q = User.ransack(params[:q])
+        @users = @q.result
+    end 
+
     def create
         @user = User.new(user_params)
         if @user.save
@@ -20,6 +26,6 @@ class UsersController < ApplicationController
     private
    
     def user_params
-        params.require(:user).permit(:id, :email, :password, :password_confirmation, :avatar)
+        params.require(:user).permit(:id, :email, :password, :password_confirmation, :town, :address, :avatar)
     end 
 end

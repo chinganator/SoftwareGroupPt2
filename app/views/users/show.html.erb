@@ -1,6 +1,37 @@
 <h1 align="center">Welcome to <%= @user.email %>'s library</h1>
+<h2 align="center"><%= @user.email%> is from <%= @user.town %></h2>
+<h3 align="center">The library is located at <%= @user.address %></h3>
+<div align="center">
 <div class="row">
     <div class="col-md-4 col-md-offset-4 center">
     </div>
-</div>
 <h4 align="center"><%= @user.email %>'s books</h4>
+<% @user.books.each do |book| %>
+<div class="row">
+  <div class="col-xs-8 col-xs-offset-2">
+    <div class="well well-lg">
+       <div class="book-title">
+       </div>        
+      <strong>Title</strong> </th>
+     <br>
+     <%= link_to book.title, book_path(book) %>
+     <br>
+     <th> <strong>Author</strong> </th>
+     <br>
+     <td> <%= book.author %> </td>
+     <br>
+     <th> <strong>Genre</strong> </th>
+     <br>
+     <td> <%= book.genre %> </td>
+     <br>
+     <th> <strong>Description</strong> </th>
+     <br>
+     <td> <%= book.description %> </td>
+     <br>
+     </div>
+     </div>
+     </div>
+
+<% end %>
+</div>
+ 
