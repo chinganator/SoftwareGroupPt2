@@ -31,8 +31,9 @@ gem 'bootstrap-sass'
 gem 'sassc-rails'
 gem 'ransack'
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-
+gem 'bcrypt', '~> 3.1.7'
+gem 'pry-rails'
+gem 'paperclip', '~> 4.2'
 # Use unicorn as the app server
 # gem 'unicorn'
 

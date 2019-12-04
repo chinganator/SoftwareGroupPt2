@@ -1,0 +1,29 @@
+<br></br>
+<br></br>
+<h2 align="center">Listing all books</h2>
+<% @books.each do |book| %>
+ <div class="row">
+  <div class="col-xs-8 col-xs-offset-2">
+   <div class="well well-lg">
+    <div class="article-title">
+     <%= link_to book.title, book_path(book) %>
+    </div>
+    <div class="book-body">
+     <%= truncate(book.description, length: 300 %>
+     <br></br>
+     <%= truncate(book.author, length: 100) %>
+     <br></br>
+     <%= truncate(book.genre, length: 100) %>
+    
+     </div>
+        <div class="book-meta-details">
+            <small>Created by: <%= book.user.email if book.user %></small> 
+            </div> 
+    <div class="book-actions">
+     <%= link_to "Edit", edit_book_path(book), class: "btn btn-xs btn-primary" %>
+     <%= link_to "Delete", book_path(book), method: :delete, data: { confirm: "Are you sure you want to delete this book?"}, class: "btn btn-xs btn-danger" %>
+    </div>
+   </div>
+  </div>
+ </div>
+<% end %>

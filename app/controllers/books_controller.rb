@@ -1,6 +1,6 @@
 class BooksController < ApplicationController
-before_action :set_book, only: [:edit, :update, :show, :destroy]
-    
+    before_action :set_book, only: [:show, :edit, :update, :destroy]
+    before_filter :authorize    
     
 
     def new
@@ -17,8 +17,11 @@ before_action :set_book, only: [:edit, :update, :show, :destroy]
 
     def create
         #render plain: params[:book].inspect 
-        @book = Book.new(book_params)
+        #  @book = Book.new(book_params)
+        #  @book.user = User.first
+        @book = current_user.books.build(book_params)
         if @book.save
+    
             flash[:notice] = "Book was succesfully created!"
             redirect_to book_path(@book)
         else 
@@ -40,17 +43,22 @@ before_action :set_book, only: [:edit, :update, :show, :destroy]
     end 
 
     def show 
+        @books = Book.find(params[:id])
     end 
     
     
     def destroy
-        @book.destroy
+        @book_destroy = Book.find(params[:id])
+        if @book_destroy.present?
+            @book_destroy.destroy
+        end 
         flash[:notice] = "Book was deleted"
         redirect_to books_path
     end 
     private 
         def book_params
-            params.require(:book).permit(:title, :author, :genre, :description)
+            params.require(:book).permit(:user_id, :title, :author, :genre, :description)
+            .merge(user_id: current_user.id)
         end 
 
         def set_book
