@@ -24,7 +24,7 @@ class BooksController < ApplicationController
         @book = current_user.books.build(book_params)
         if @book.save
     
-            flash[:notice] = "Book was succesfully created!"
+            flash[:success] = "Book was succesfully created!"
             redirect_to book_path(@book)
         else 
             render 'new'
