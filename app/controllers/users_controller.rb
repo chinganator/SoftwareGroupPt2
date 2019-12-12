@@ -18,7 +18,7 @@ class UsersController < ApplicationController
         @user = User.new(user_params)
         if @user.save
             session[:user_id] = @user.id
-            flash[:auccess] = "Welcome to bookinator #{@user.email}"
+            flash[:auccess] = "Welcome to bookinator, #{@user.email}"
             redirect_to root_url
         else 
             render "new"
