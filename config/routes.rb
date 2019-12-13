@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  #Written by: Daniel Ching
+  #Debugged by: Daniel Ching
+  #Tested by: Daniel Ching
   get 'sessions/new'
 
   resources :users

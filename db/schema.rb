@@ -11,14 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20191204170139) do
+ActiveRecord::Schema.define(version: 20191212101650) do
 
   create_table "books", force: true do |t|
-    t.string  "title"
-    t.string  "author"
-    t.string  "genre"
-    t.text    "description"
-    t.integer "user_id"
+    t.string   "title"
+    t.string   "author"
+    t.string   "genre"
+    t.text     "description"
+    t.integer  "user_id"
+    t.string   "bookpicture_file_name"
+    t.string   "bookpicture_content_type"
+    t.integer  "bookpicture_file_size"
+    t.datetime "bookpicture_updated_at"
   end
 
   create_table "users", force: true do |t|

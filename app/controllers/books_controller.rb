@@ -1,7 +1,9 @@
 class BooksController < ApplicationController
     before_action :set_book, only: [:show, :edit, :update, :destroy]
     before_filter :authorize    
-    
+    #Written by: Daniel Ching
+  #Debugged by: Daniel Ching
+  #Tested by: Daniel Ching
 
     def new
         @book = Book.new
@@ -10,7 +12,7 @@ class BooksController < ApplicationController
 
     def index
         params[:q].reject { |_, v| v.blank?} if params[:q]
-
+        
         @books = Book.all.order(:id)
         @q = Book.ransack(params[:q])
         @books = @q.result.includes(:user)
@@ -59,7 +61,7 @@ class BooksController < ApplicationController
     end 
     private 
         def book_params
-            params.require(:book).permit(:user_id, :title, :author, :genre, :description)
+            params.require(:book).permit(:user_id, :title, :author, :genre, :description, :bookpicture)
             .merge(user_id: current_user.id)
         end 
 

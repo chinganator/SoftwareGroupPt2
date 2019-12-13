@@ -1,3 +1,6 @@
+#Written by: Daniel Ching
+  #Debugged by: Daniel Ching
+  #Tested by: Daniel Ching
 <h1 align="center">Welcome to <%= @user.email %>'s library</h1>
 <h2 align="center"><%= @user.email%> is from <%= @user.town %></h2>
 <h3 align="center">The library is located at <%= @user.address %></h3>
@@ -12,6 +15,8 @@
     <div class="well well-lg">
        <div class="book-title">
        </div>        
+<h4 class="center"> <%= image_tag book.bookpicture.url(:thumb) %> <h4>
+
       <strong>Title</strong> </th>
      <br>
      <%= link_to book.title, book_path(book) %>

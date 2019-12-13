@@ -1,5 +1,7 @@
 class SessionsController < ApplicationController
-
+#Written by: Daniel Ching
+  #Debugged by: Daniel Ching
+  #Tested by: Daniel Ching
 
   def new
   end

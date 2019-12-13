@@ -1,48 +1,28 @@
 require 'test_helper'
 
 class UsersControllerTest < ActionController::TestCase
-  setup do
-    @user = user(:one)
-  end  
-  
-  test "should get index" do
-     get users_url
-     assert_response :success
-   end
-
-   test "should get new" do
-    get new_user_url
-    assert_response :success
-   end 
-
-  assert_redirected_to user_url(User.last)
+  context 'GET #index' do
+    it 'returns a success response' do
+      get :index
+      expect(response).to be_success
+    end 
+  end
+  context 'GET #show' do
+    it 'returns a success response' do
+      user = User.create!(email: 'eve', password_digest: 'maplestory' )
+      get :show, params: { id: user.to_param }
+      expect(response).to be_success
+    end 
   end 
-   test "should create user" do
-    assert_difference('User.count') do
-      post users_url, params: { user: {email: @user.email, password: @user.password_digest}}
+  context 'GET #create' do
+    it 'create user' do
+      expect(User.all.count).to eq(1)
     end 
-    
-    test "should show user" do
-      get users_url(@user)
-      assert_response :success
+  end 
+  describe "validations" do
+    it "should not let user create without user" do
+      @user.email = nil
+      expect(@user).to_not be_valid
     end 
-
-    test "should get edit" do
-      get edit_user_irl(@user)
-      assert_response :success
-
-    end 
-    test "should update user" do
-      patch users_url(@user), params: { user: {email: @user.email, password: @user.password_digest}}
-      assert_redirected_to user_url(@user)
-    end
-
-    test "should destroy user" do
-      assert_difference('User.count', -1) do
-        delete users_url(@user)
-    end
-
-    assert_redirected_to users_url
-  end   
-
+  end 
 end

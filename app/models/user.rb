@@ -1,4 +1,7 @@
 class User < ActiveRecord::Base
+    #Written by: Daniel Ching
+  #Debugged by: Daniel Ching
+  #Tested by: Daniel Ching
     has_many :books
     validates :email, presence: true
     has_attached_file :avatar, styles: { large: "600x600>", medium: "300x300>", thumb: "150x150>"}

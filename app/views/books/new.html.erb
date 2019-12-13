@@ -1,6 +1,12 @@
 <h1> Create a book </h1>
-
+#Written by: Daniel Ching
+  #Debugged by: Daniel Ching
+  #Tested by: Daniel Ching
 <%= form_for @book do |f| %>
+    <div class="field">
+    <%= f.label :bookpicture %><br />
+    <%= f.file_field :bookpicture %>
+</div>
     <p>
         <%= f.label :title %>
         <%= f.text_field :title %>
